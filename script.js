@@ -1,9 +1,9 @@
 document.getElementById('widgetForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const name = document.getElementById('name').value;
+    const username = document.getElementById('username').value;
     const website = document.getElementById('website').value;
-    const webId = document.getElementById('webId').value;
+    const email = document.getElementById('email').value;
     
     const codeSnippet = `<!-- Start -->\n<div id="testimonial-widget-container"></div>\n <script src="https://abubakar132.github.io/easy-testimonial/testimonial-widget.js"></script>\n<script>\n  initTestimonialWidget('testimonial-widget-container', '${username}');\n</script>\n<!-- End -->`;
     
