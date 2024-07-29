@@ -113,7 +113,7 @@ function renderTestimonials(containerId, webId) {
 
     // Add badge/link
     const badge = document.createElement('a');
-    badge.href = 'https://easy-testimonial.vercel.app'; // You can change this to the actual URL or remove it if unnecessary
+    badge.href = 'https://abubakar132.github.io/easy-testimonial/'; 
     badge.textContent = 'Powered by Easy Testimonials';
     badge.className = 'badge';
     container.appendChild(badge);
