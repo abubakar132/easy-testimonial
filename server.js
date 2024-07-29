@@ -13,7 +13,6 @@ app.use(cors());
 // MongoDB Connection
 mongoose.connect('mongodb+srv://abubakar:hahatestimonial@cluster0.gc80wvl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     ssl: true,
-    sslValidate: true,
 });
 
 const db = mongoose.connection;
