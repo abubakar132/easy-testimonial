@@ -35,6 +35,6 @@ In the code snippet, replace 'web_id_here' with the Web ID that corresponds to y
 You can customize the appearance of the widget by editing the CSS in the testimonial-widget.js file or by using custom CSS in your website’s stylesheet.
 
 ## How It Works
-Load the Script: The widget script is loaded from the provided URL.
-Create the Widget Container: A <div> element with the ID testimonial-widget-container is used as the container for the widget.
-Initialize the Widget: The initTestimonialWidget function initializes the widget with the specified Web ID.
+- Load the Script: The widget script is loaded from the provided URL.
+- Create the Widget Container: A div element with the ID testimonial-widget-container is used as the container for the widget.
+- Initialize the Widget: The initTestimonialWidget function initializes the widget with the specified Web ID.
