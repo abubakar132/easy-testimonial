@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Widget</title>
+    <style>
+        .testimonial {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .testimonial p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for the testimonial widget -->
+    <div id="testimonial-widget-container"></div>
+
+    <!-- Include the testimonial widget script -->
+    <script src="testimonial-widget.js"></script>
+
+    <!-- Initialize the testimonial widget with a webId -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const webId = 'your-unique-web-id'; // Replace with dynamic webId if needed
+            initTestimonialWidget('testimonial-widget-container', webId);
+        });
+    </script>
+</body>
+</html>
