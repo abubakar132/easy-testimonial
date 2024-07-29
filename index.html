@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonial Widget</title>
-    <style>
-        .testimonial {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        .testimonial p {
-            margin: 5px 0;
-        }
-    </style>
+    <title>Easy Testimonials Widget</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Container for the testimonial widget -->
-    <div id="testimonial-widget-container"></div>
-
-    <!-- Include the testimonial widget script -->
-    <script src="https://abubakar132.github.io/easy-testimonial/testimonial-widget.js"></script>
-
-    <!-- Initialize the testimonial widget with a webId -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const webId = 'your-unique-web-id'; // Replace with dynamic webId if needed
-            initTestimonialWidget('testimonial-widget-container', webId);
-        });
-    </script>
+    <div class="container">
+        <header>
+            <img src="assets/ET.png" alt="">
+            <p>Embed beautiful testimonials on your website effortlessly.</p>
+        </header>
+        <main>
+            <form id="widgetForm">
+                <h2>Get Your Widget Code</h2>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="website">Your Website</label>
+                <input type="url" id="website" name="website" required>
+                
+                <label for="email">Your Email</label>
+                <input type="text" id="webId" name="webId" required>
+                
+                <button type="submit">Generate Code</button>
+            </form>
+            <div id="codeSnippetContainer" class="hidden">
+                <h2>Your Embed Code</h2>
+                <pre id="codeSnippet"></pre>
+                <button id="copyButton">Copy to Clipboard</button>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Easy Testimonials. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
