@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:5000/api/testimonials/testimonials';
+const apiUrl = 'https://easy-testimonial.onrender.com:10000/api/testimonials/testimonials';
 
 // Function to inject styles
 function injectStyles() {
