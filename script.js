@@ -5,7 +5,7 @@ document.getElementById('widgetForm').addEventListener('submit', function(event)
     const website = document.getElementById('website').value;
     const webId = document.getElementById('webId').value;
     
-    const codeSnippet = `<!-- Start -->\n <script src="https://abubakar132.github.io/easy-testimonial/testimonial-widget.js"></script>\n<script>\n  initTestimonialWidget('testimonial-widget-container', '${website}');\n</script>\n<div id="testimonial-widget-container"></div>\n<!-- End -->`;
+    const codeSnippet = `<!-- Start -->\n<div id="testimonial-widget-container"></div>\n <script src="https://abubakar132.github.io/easy-testimonial/testimonial-widget.js"></script>\n<script>\n  initTestimonialWidget('testimonial-widget-container', '${username}');\n</script>\n<!-- End -->`;
     
     document.getElementById('codeSnippet').textContent = codeSnippet;
     document.getElementById('codeSnippetContainer').classList.remove('hidden');
