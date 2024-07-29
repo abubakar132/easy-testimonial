@@ -9,7 +9,7 @@ function injectStyles() {
             color: #333; /* Dark text for readability */
             padding: 20px;
             border-radius: 10px;
-            width: 80%;
+            width: 85%;
             margin: 0 auto;
             font-family: Arial, sans-serif;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -113,7 +113,7 @@ function renderTestimonials(containerId, webId) {
 
     // Add badge/link
     const badge = document.createElement('a');
-    badge.href = '#'; // You can change this to the actual URL or remove it if unnecessary
+    badge.href = 'https://easy-testimonial.vercel.app'; // You can change this to the actual URL or remove it if unnecessary
     badge.textContent = 'Powered by Easy Testimonials';
     badge.className = 'badge';
     container.appendChild(badge);
@@ -135,6 +135,9 @@ function renderTestimonials(containerId, webId) {
                 `;
                 container.appendChild(testimonialDiv);
             });
+
+            // Create and add form after rendering testimonials
+            createTestimonialForm(containerId, webId);
         })
         .catch(error => {
             console.error("Error fetching testimonials: ", error);
@@ -183,8 +186,7 @@ function createTestimonialForm(containerId, webId) {
 // Initialize the widget
 function initTestimonialWidget(containerId, webId) {
     injectStyles(); // Inject the styles
-    renderTestimonials(containerId, webId);
-    createTestimonialForm(containerId, webId); // Form will be added after testimonials
+    renderTestimonials(containerId, webId); // Render testimonials and add the form afterward
 }
 
 // Export the init function to be used in other scripts
